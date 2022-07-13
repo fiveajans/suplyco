@@ -7,6 +7,15 @@ $app->router->notFound(function () {
 
 $app->router->get('/', 'Client.Home@index');
 
+$app->router->group('/about', function ($router) {
+
+	$router->get('/', 'Client.About@index');
+	$router->get('/detail', 'Client.About@detail');
+
+});
+
+$app->router->get('/contact', 'Client.Contact@index');
+
 $app->router->group('/admin', function ($router) {
 
 	$router->get('/', function () {
