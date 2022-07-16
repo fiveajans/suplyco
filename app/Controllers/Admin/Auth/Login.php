@@ -3,8 +3,8 @@
 namespace App\Controllers\Admin\Auth;
 
 use Core\Controller;
-use PDO;
 use Symfony\Component\HttpFoundation\Request;
+use PDO;
 
 class Login extends Controller
 {

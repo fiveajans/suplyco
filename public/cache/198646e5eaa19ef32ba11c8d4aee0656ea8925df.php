@@ -19,6 +19,10 @@
 	<link type="text/css" rel="stylesheet" href="<?php echo e(asset_url('client/css/color.css')); ?>">
 	<link type="text/css" rel="stylesheet" href="<?php echo e(asset_url('client/css/custom.css')); ?>">
 
+	<script>
+		const API_URL = '<?php echo e(site_url('api')); ?>';
+	</script>
+
 	<?php echo $__env->yieldContent('styles'); ?>
 </head>
 <body>
@@ -227,6 +231,7 @@
 	<script src="<?php echo e(asset_url('client/js/jquery.min.js')); ?>"></script>
 	<script src="<?php echo e(asset_url('client/js/plugins.js')); ?>"></script>
 	<script src="<?php echo e(asset_url('client/js/scripts.js')); ?>"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script src="<?php echo e(asset_url('client/js/custom.js')); ?>"></script>
 
 	<?php echo $__env->yieldContent('scripts'); ?>

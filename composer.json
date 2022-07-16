@@ -15,7 +15,8 @@
 		"arrilot/dotenv-php": "^2.0",
 		"nesbot/carbon": "^2.59",
 		"aura/session": "^2.1",
-		"verot/class.upload.php": "^2.1"
+		"verot/class.upload.php": "^2.1",
+		"phpmailer/phpmailer": "^6.6"
 	},
 	"autoload": {
 		"psr-4": {

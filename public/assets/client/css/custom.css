@@ -1,55 +1,81 @@
 ﻿.nicescroll-cursors {
-    background-color: #5DB440 !important;
+	background-color: #5DB440 !important;
 }
 
 .cookie-message {
-    background-color: rgba(0, 0, 0, .8);
-    padding: 20px 30px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    color: white;
-    height: 70px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    bottom: 0;
-    opacity: 0;
-    visibility: hidden;
-    display: none;
+	background-color: rgba(0, 0, 0, .8);
+	padding: 20px 30px;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: white;
+	height: 70px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
+	display: none;
 }
 
 .cookie-message.active {
-    display: flex;
-    visibility: inherit;
-    opacity: 1;
+	display: flex;
+	visibility: inherit;
+	opacity: 1;
 }
 
 .cookie-message .cm-text {
-    font-size: 14px;
-    line-height: 1.5;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    font-weight: bold;
-    margin-right: 80px;
+	font-size: 14px;
+	line-height: 1.5;
+	color: white;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	font-weight: bold;
+	margin-right: 80px;
 }
 
 .cookie-message .btn {
-    cursor: pointer;
+	cursor: pointer;
+}
+
+.alert {
+	text-align: left;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+	padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.alert.alert-warning {
+	color: #856404;
+	background-color: #fff3cd;
+	border-color: #ffeeba;
+}
+
+.alert.alert-danger {
+	color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert.alert-success {
+	color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
 }
