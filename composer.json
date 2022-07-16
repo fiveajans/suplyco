@@ -16,7 +16,8 @@
 		"nesbot/carbon": "^2.59",
 		"aura/session": "^2.1",
 		"verot/class.upload.php": "^2.1",
-		"phpmailer/phpmailer": "^6.6"
+		"phpmailer/phpmailer": "^6.6",
+		"enyo/dropzone": "^5.9"
 	},
 	"autoload": {
 		"psr-4": {

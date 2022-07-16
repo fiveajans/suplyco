@@ -79,3 +79,15 @@
     background-color: #d4edda;
     border-color: #c3e6cb;
 }
+
+.file-upload {
+	display: inline-block;
+	background-color: #353535;
+	color: #fff;
+	padding: 12px 24px;
+	cursor: pointer;
+}
+
+.file-upload i {
+	margin-right: 5px;
+}
