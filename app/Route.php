@@ -50,6 +50,8 @@ $app->router->group('/admin', function ($router) {
 		});
 
 		$router->get('/approved', 'Admin.Products@approved');
+		$router->any('/create', 'Admin.Products@create');
+		$router->any('/update', 'Admin.Products@update');
 
 	});
 

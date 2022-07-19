@@ -62,11 +62,11 @@
 					<a href="{{ site_url('admin/dashboard') }}" class="logo">
 						<img src="{{ asset_url('admin/img/logo.svg') }}" alt="Yönetim Paneli">
 					</a>
-					<a href="#tab-home" class="nav-link {{ segment(1) == 'dashboard' ? 'active' : null }}" id="home-tab" data-bs-toggle="tab" role="tab" aria-controls="tab-home" aria-selected="{{ segment(1) == 'dashboard' ? 'true' : 'false' }}">
+					<a href="#tab-home" class="nav-link {{ segments(1) == 'dashboard' ? 'active' : null }}" id="home-tab" data-bs-toggle="tab" role="tab" aria-controls="tab-home" aria-selected="{{ segments(1) == 'dashboard' ? 'true' : 'false' }}">
 						<i class="icon-home2"></i>
 						<span class="nav-link-text">Anasayfa</span>
 					</a>
-					<a href="#tab-product" class="nav-link {{ segment(1) == 'products' ? 'active' : null }}" id="product-tab" data-bs-toggle="tab" role="tab" aria-controls="tab-product" aria-selected="{{ segment(1) == 'products' ? 'true' : 'false' }}">
+					<a href="#tab-product" class="nav-link {{ segments(1) == 'products' ? 'active' : null }}" id="product-tab" data-bs-toggle="tab" role="tab" aria-controls="tab-product" aria-selected="{{ segments(1) == 'products' ? 'true' : 'false' }}">
 						<i class="icon-layers2"></i>
 						<span class="nav-link-text">Ürünler</span>
 					</a>
@@ -101,7 +101,7 @@
 				<div class="tab-content">
 
 					<!-- Home tab -->
-					<div class="tab-pane fade {{ segment(1) == 'dashboard' ? 'show active' : null }}" id="tab-home" role="tabpanel" aria-labelledby="home-tab">
+					<div class="tab-pane fade {{ segments(1) == 'dashboard' ? 'show active' : null }}" id="tab-home" role="tabpanel" aria-labelledby="home-tab">
 
 						<!-- Tab content header start -->
 						<div class="tab-pane-header">
@@ -114,7 +114,7 @@
 							<div class="sidebar-menu">
 								<ul>
 									<li>
-										<a href="{{ site_url('admin/dashboard') }}" class="{{ segment(1) == 'dashboard' ? 'current-page' : null }}">
+										<a href="{{ site_url('admin/dashboard') }}" class="{{ segments(1) == 'dashboard' ? 'current-page' : null }}">
 											Genel Bakış
 										</a>
 									</li>
@@ -157,7 +157,7 @@
 					</div>
 
 					<!-- Products tab -->
-					<div class="tab-pane fade {{ segment(1) == 'products' ? 'show active' : null }}" id="tab-product" role="tabpanel" aria-labelledby="product-tab">
+					<div class="tab-pane fade {{ segments(1) == 'products' ? 'show active' : null }}" id="tab-product" role="tabpanel" aria-labelledby="product-tab">
 
 						<!-- Tab content header start -->
 						<div class="tab-pane-header">
@@ -170,24 +170,24 @@
 							<div class="sidebar-menu">
 								<ul>
 									<li>
-										<a href="{{ site_url('admin/products/approved') }}" class="{{ segment(1) == 'products' && segment(2) == 'approved' ? 'current-page' : null }}">
+										<a href="{{ site_url('admin/products/approved') }}" class="{{ segments(1) == 'products' && segments(2) == 'approved' ? 'current-page' : null }}">
 											Aktif Ürünler
 										</a>
 									</li>
 									<li>
-										<a href="{{ site_url('admin/products/create') }}" class="{{ segment(1) == 'products' && segment(2) == 'create' ? 'current-page' : null }}">
+										<a href="{{ site_url('admin/products/create') }}" class="{{ segments(1) == 'products' && segments(2) == 'create' ? 'current-page' : null }}">
 											Ürün Ekle
 										</a>
 									</li>
 									<li>
-										<a href="{{ site_url('admin/products/unapproved') }}" class="{{ segment(1) == 'products' && segment(2) == 'unapproved' ? 'current-page' : null }}">
+										<a href="{{ site_url('admin/products/unapproved') }}" class="{{ segments(1) == 'products' && segments(2) == 'unapproved' ? 'current-page' : null }}">
 											Çöp Kutusu
 										</a>
 									</li>
 								</ul>
 								<ul>
 									<li class="list-heading">
-										HemenYolda
+										Suplyco
 									</li>
 									<li>
 										<a href="calendar-daygrid-view.html">

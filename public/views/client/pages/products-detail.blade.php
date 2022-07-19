@@ -129,8 +129,8 @@
 
 										<!-- swiper-slide -->
 										<div class="swiper-slide hov_zoom">
-											<img src="{{ upload_url('original/products/' . $image->image) }}" alt="{{ $product->name }}">
-											<a href="{{ upload_url('original/products/' . $image->image) }}" class="box-media-zoom popup-image">
+											<img src="{{ upload_url('images/original/products/' . $image->image) }}" alt="{{ $product->name }}">
+											<a href="{{ upload_url('images/original/products/' . $image->image) }}" class="box-media-zoom popup-image">
 												<i class="fal fa-search"></i>
 											</a>
 											<span class="slide-numb">.0{{ $i }}</span>

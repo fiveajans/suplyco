@@ -55,7 +55,7 @@
 					<!-- portfolio_item -->
 					<div class="portfolio_item {{ $i == 1 || $i == 4 ? 'portfolio_item_second' : null }}">
 						<div class="grid-item-holder hov_zoom">
-							<img src="{{ upload_url('original/products/' . $product->image) }}" alt="{{ $product->name }}">
+							<img src="{{ upload_url('images/original/products/' . $product->image) }}" alt="{{ $product->name }}">
 							<div class="grid-det">
 								
 								@if ($product->video)

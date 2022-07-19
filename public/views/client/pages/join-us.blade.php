@@ -78,90 +78,87 @@
 						<div class="single-post-comm" id="comments">
 							<div id="respond" class="clearafix">
 								<div class="comment-reply-form clearfix">
-									<div class="alert alert-danger" style="margin: 0">
-										error
-									</div>
+									
+									@if ($message)
+
+										<div class="alert alert-{{ $message['class'] }}" style="margin: 0">
+											{!! $message['text'] !!}
+										</div>
+
+									@endif
+
 									<form action="" method="post" enctype="multipart/form-data" class="add-comment custom-form dropzone" id="dropzone-form">
 										<fieldset>
 											<div class="row">
 												<div class="col-md-12">
-													<input type="text" placeholder="Full Name *" value="" required>
+													<input type="text" name="name" placeholder="Full Name *" value="{{ $old ? $old['name'] : null }}" required>
 												</div>
 												<div class="col-md-12">
-													<input type="text" placeholder="Identity Number *" value="" required>
+													<input type="text" name="identity" placeholder="Identity Number *" value="{{ $old ? $old['identity'] : null }}" required>
 												</div>
 												<div class="col-md-12">
-													<input type="text" placeholder="Bhirtday *" value="" required>
+													<input type="text" name="birthday" placeholder="Birthday *" value="{{ $old ? $old['birthday'] : null }}" required>
 												</div>
 												<div class="col-md-12">
-													<input type="email" placeholder="Email Address *" value="" required>
+													<input type="email" name="email" placeholder="Email Address *" value="{{ $old ? $old['email'] : null }}" required>
 												</div>
 												<div class="col-md-12">
-													<input type="text" placeholder="Phone Number *" value="" required>
+													<input type="text" name="phone" placeholder="Phone Number *" value="{{ $old ? $old['phone'] : null }}" required>
 												</div>
 												<div class="col-md-12">
-													<input type="text" placeholder="Phone Number (If Not Reached) *" value="" required>
+													<input type="text" name="phone_2" placeholder="Phone Number (If Not Reached) *" value="{{ $old ? $old['phone_2'] : null }}" required>
 												</div>
 												<div class="col-md-12">
-													<input type="text" placeholder="Address *" value="" required>
+													<input type="text" name="address" placeholder="Address *" value="{{ $old ? $old['address'] : null }}" required>
 												</div>
 												<div class="col-md-12">
-													<input type="text" placeholder="Graduated School *" value="" required>
+													<input type="text" name="gra_school" placeholder="Graduated School *" value="{{ $old ? $old['gra_school'] : null }}" required>
 												</div>
 												<div class="col-md-12">
-													<input type="text" placeholder="Graduated Department *" value="" required>
+													<input type="text" name="gra_department" placeholder="Graduated Department *" value="{{ $old ? $old['gra_department'] : null }}" required>
 												</div>
 												<div class="col-md-12">
-													<input type="text" placeholder="GPA *" value="" required>
+													<input type="text" name="gpa" placeholder="GPA *" value="{{ $old ? $old['gpa'] : null }}" required>
 												</div>
 												<div class="col-md-12">
-													<input type="text" placeholder="Programs and Methods You Can Use (With Details) *" value="" required>
+													<input type="text" name="certificates" placeholder="Certificates" value="{{ $old ? $old['certificates'] : null }}">
 												</div>
 												<div class="col-md-12">
-													<input type="text" placeholder="Certificates" value="">
+													<input type="text" name="job_exp" placeholder="Job Experiences (With Details)" value="{{ $old ? $old['job_exp'] : null }}">
 												</div>
 												<div class="col-md-12">
-													<input type="text" placeholder="Jon Experiences (With Details)" value="">
+													<input type="text" name="about" placeholder="Tell About Yourself" value="{{ $old ? $old['about'] : null }}">
 												</div>
 												<div class="col-md-12">
-													<input type="text" placeholder="Tell About Yourself" value="">
+													<input type="text" name="perspective" placeholder="Perspective On Life" value="{{ $old ? $old['perspective'] : null }}">
 												</div>
 												<div class="col-md-12">
-													<input type="text" placeholder="Perspective On Life" value="">
+													<input type="text" name="why_work" placeholder="Why Work With You? *" value="{{ $old ? $old['why_work'] : null }}" required>
 												</div>
 												<div class="col-md-12">
-													<input type="text" placeholder="Why Work With You? *" value="" required>
+													<input type="text" name="reference" placeholder="Reference Information (With Details)" value="{{ $old ? $old['reference'] : null }}">
 												</div>
 												<div class="col-md-12">
-													<input type="text" placeholder="Reference Information (With Details)" value="">
-												</div>
-												<div class="col-md-12">
-													<input type="text" placeholder="LinkedIn" value="">
-												</div>
-												<div class="col-md-12">
-													<input type="text" placeholder="GitHub" value="">
-												</div>
-												<div class="col-md-12">
-													<input type="text" placeholder="Your Own Website" value="">
+													<input type="text" name="linkedin" placeholder="LinkedIn" value="{{ $old ? $old['linkedin'] : null }}">
 												</div>
 											</div>
 											<div class="row">
 												<div class="col-md-12">
-													<textarea cols="40" rows="3" placeholder="Comment"></textarea>
+													<textarea name="comment" cols="40" rows="3" placeholder="Comment">{{ $old ? $old['comment'] : null }}</textarea>
 												</div>
 											</div>
 											<div class="row" style="margin: 20px -15px">
 												<div class="col-md-12">
 													<label for="cv" class="file-upload">
 														<i class="fa fa-cloud-upload"></i>
-														CV* Upload
+														Upload Resume*
 													</label>
-													<input type="file" name="cv" required id="cv" style="display: none">
+													<input type="file" name="cv" id="cv" style="display: none">
 												</div>
 											</div>
 											<div class="row" style="margin-top: 15px">
 												<div class="col-md-12">
-													<input type="checkbox" name="law" required id="law">
+													<input type="checkbox" name="law" {{ $old && $old['law'] ? 'checked' : null }} required id="law">
 													<label for="law">
 														I have read and understood
 														<b>the personal data protection law.</b>

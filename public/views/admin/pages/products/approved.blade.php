@@ -26,10 +26,7 @@
 											Ürün
 										</th>
 										<th>
-											Kategori
-										</th>
-										<th>
-											Fiyat
+											Açıklama
 										</th>
 										<th>
 											Tarih
@@ -49,34 +46,25 @@
 										<tr>
 											<td>
 												<div class="media-box">
-													<img src="{{ upload_url('cache/products/40x40/' . $product->image) }}" class="media-avatar" alt="Product">
+													<img src="{{ upload_url('images/cache/products/40x40/' . $product->image) }}" class="media-avatar" alt="{{ $product->name }}">
 													<div class="media-box-body">
 														<a href="{{ site_url('admin/products/update/' . $product->id) }}" class="text-truncate">
 															{{ $product->name }}
 														</a>
-
-														@if ($product->sku)
-															<p>
-																SKU: #{{ $product->sku }}
-															</p>
-														@endif
-
+														<p>
+															#{{ $product->id }}
+														</p>
 													</div>
 												</div>
 											</td>
 											<td>
-												<a href="{{ site_url('admin/products/categories/update/' . $product->category_id) }}">
-													{{ $product->category_name }}
-												</a>
-											</td>
-											<td>
-												₺{{ $product->price }}
+												{{ $product->description }}
 											</td>
 											<td>
 												{{ $product->updated_at }}
 											</td>
 											<td>
-												<span class="badge bg-success">Mevcut</span>
+												<span class="badge bg-success">Aktif</span>
 											</td>
 											<td>
 												<div class="actions">

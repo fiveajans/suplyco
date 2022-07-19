@@ -10,8 +10,7 @@
 		<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 			<div class="login-about">
 				<div class="slogan">
-					<span>Baba</span>
-					<span>Çavuş</span>
+					<span>Suplyco</span>
 					<span>Yönetim Paneli</span>
 				</div>
 				<div class="about-desc">
