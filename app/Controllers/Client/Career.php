@@ -4,6 +4,9 @@ namespace App\Controllers\Client;
 
 use Core\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
 class Career extends Controller
 {
@@ -130,6 +133,49 @@ class Career extends Controller
 
 					if ($insert)
 					{
+						$mail = new PHPMailer(true);
+
+						try
+						{
+							$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+							$mail->isSMTP();
+							$mail->Host = 'smtp.gmail.com';
+							$mail->SMTPAuth = true;
+							$mail->Username = 'noreply@suplyco.com';
+							$mail->Password = '1q2q2w3w';
+							$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+							$mail->Port = 465;
+
+							$mail->setFrom('noreply@suplyco.com', 'Suplyco');
+							$mail->addAddress('info@suplyco.com');
+
+							$mail->addAttachment(upload_url('files/' . $file . '.pdf'));
+
+							$mail->isHTML(true);
+							$mail->Subject = 'Suplyco - Career';
+							$mail->Body = '<b>From:</b> ' . $email . '<br>' .
+							'<b>Name:</b> '. $name . '<br>' .
+							'<b>Identity:</b>' . $identity . '<br>' .
+							'<b>Birthday:</b>' . $birthday . '<br>' .
+							'<b>Phone:</b>' . $phone . '<br>' .
+							'<b>Phone 2:</b>' . $phone_2 . '<br>' .
+							'<b>Address:</b>' . $address . '<br>' .
+							'<b>GRA School:</b>' . $gra_school . '<br>' .
+							'<b>GRA Department:</b>' . $gra_department . '<br>' .
+							'<b>GPA:</b>' . $gpa . '<br>' .
+							'<b>Certificates:</b>' . $certificates . '<br>' .
+							'<b>Job Exp:</b>' . $job_exp . '<br>' .
+							'<b>Message:</b> ' . $comment;
+							$mail->AltBody = 'Provider to Suplyco';
+
+							$mail->send();
+							return 'success';
+						}
+						catch (Exception $e)
+						{
+							return 'mail';
+						}
+
 						$message = [
 							'class' => 'success',
 							'text' => 'Your application has reached us.'

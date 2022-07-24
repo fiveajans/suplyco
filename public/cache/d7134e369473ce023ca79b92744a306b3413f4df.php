@@ -5,7 +5,7 @@
 
 <?php $__env->startSection('content'); ?>
 
-	<div class="content full-height" data-pagetitle="Home slider">
+	<div class="content full-height" data-pagetitle="Home Page">
 		<div class="fl-wrap full-height hero-conatiner">
 			<div class="hero-wrapper fl-wrap full-height hidden-item">
 				<span class="hc_dec"></span>
@@ -34,7 +34,7 @@
 											Modern, fast-growing company entered the echelon of the leading players in the woodworking market.
 										</h4>
 										<div class="clearfix"></div>
-										<a href="portfolio.html" class="btn ajax fl-btn color-bg">
+										<a href="<?php echo e(site_url('about')); ?>" class="btn ajax fl-btn color-bg">
 											<span>Learn More</span>
 										</a>
 									</div>
@@ -55,7 +55,7 @@
 											Specially developed solutions for use various industries.
 										</h4>
 										<div class="clearfix"></div>
-										<a href="portfolio-single.html" class="btn ajax fl-btn color-bg">
+										<a href="<?php echo e(site_url('products')); ?>" class="btn ajax fl-btn color-bg">
 											<span>All Production</span>
 										</a>
 									</div>
@@ -76,7 +76,7 @@
 											For puchasing or additional information, please contact our managers or authorized dealers
 										</h4>
 										<div class="clearfix"></div>
-										<a href="#" class="btn ajax fl-btn color-bg">
+										<a href="<?php echo e(site_url('contact')); ?>" class="btn ajax fl-btn color-bg">
 											<span>Learn More</span>
 										</a>
 									</div>
@@ -156,7 +156,7 @@
 				</div>
 				<!-- slider-controls end-->
 
-				<a href="about.html" class="ajax start-btn">
+				<a href="<?php echo e(site_url('about')); ?>" class="ajax start-btn">
 					<span>
 						Start explore
 						<i class="fal fa-long-arrow-right"></i>

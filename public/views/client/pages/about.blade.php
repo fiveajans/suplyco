@@ -95,61 +95,10 @@
 				</video>
 			</div>
 
-			<!-- hero-facts-wrap -->
-			<div class="hero-facts-wrap">
-
-				<!-- inline-facts -->
-				<div class="inline-facts">
-					<div class="milestone-counter">
-						<div class="stats animaper">
-							<div class="num" data-content="0" data-num="145">
-								0
-							</div>
-						</div>
-					</div>
-					<h6>
-						Finished projects
-					</h6>
-				</div>
-				<!-- inline-facts end -->
-
-				<!-- inline-facts -->
-				<div class="inline-facts">
-					<div class="milestone-counter">
-						<div class="stats animaper">
-							<div class="num" data-content="0" data-num="825">
-								0
-							</div>
-						</div>
-					</div>
-					<h6>
-						Working hours
-					</h6>
-				</div>
-				<!-- inline-facts end -->
-
-				<!-- inline-facts -->
-				<div class="inline-facts">
-					<div class="milestone-counter">
-						<div class="stats animaper">
-							<div class="num" data-content="0" data-num="15">
-								0
-							</div>
-						</div>
-					</div>
-					<h6>
-						Awards won
-					</h6>
-				</div>
-				<!-- inline-facts end -->
-
-			</div>
-			<!-- hero-facts-wrap  end -->
-
 		</div>
 		<!-- fs-slider-wrap end -->
 
-		<a href="about.html" class="ajax start-btn st2">
+		<a href="{{ site_url('about/detail') }}" class="ajax start-btn st2">
 			<span>
 				Start Explore
 				<i class="fal fa-long-arrow-right"></i>

@@ -49,15 +49,15 @@ class Messages extends Controller
 					{
 						$mail->SMTPDebug = SMTP::DEBUG_SERVER;
 						$mail->isSMTP();
-						$mail->Host = 'smtp.yandex.com.tr';
+						$mail->Host = 'smtp.gmail.com';
 						$mail->SMTPAuth = true;
-						$mail->Username = 'eminarifpirinc@fiveajans.com';
-						$mail->Password = 'hshbEA2005!';
+						$mail->Username = 'noreply@suplyco.com';
+						$mail->Password = '1q2q2w3w';
 						$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 						$mail->Port = 465;
 
-						$mail->setFrom('eminarifpirinc@fiveajans.com', 'Suplyco');
-						$mail->addAddress('eminarifpirinc@fiveajans.com');
+						$mail->setFrom('noreply@suplyco.com', 'Suplyco');
+						$mail->addAddress('info@suplyco.com');
 
 						$mail->isHTML(true);
 						$mail->Subject = 'Suplyco - Contact Form';

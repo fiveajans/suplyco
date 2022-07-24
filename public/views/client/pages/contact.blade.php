@@ -5,7 +5,7 @@
 
 @section('content')
 
-	<div class="content full-height no-mob-hidden2" data-pagetitle="Contacts">
+	<div class="content full-height no-mob-hidden2" data-pagetitle="Contacts" style="background: url({{ asset_url('client/images/contact.jpg') }}) no-repeat; background-size: cover">
 		<div class="content-inner">
 			<div class="content-front">
 				<div class="cf-inner">
@@ -24,15 +24,15 @@
 							</li>
 							<li>
 								<span>02. Adress:</span>
-								<a href="https://goo.gl/maps/foGcLXfrr7Cm6Ffx9" target="_blank">
+								<!--<a href="https://goo.gl/maps/foGcLXfrr7Cm6Ffx9" target="_blank">-->
 									Adnan Kahveci Str. Inönü Blvd.
 									<br />
 									No: 89-91 Beylikdüzü, Istanbul/Turkey
-								</a>
+								<!--</a>-->
 							</li>
 							<li>
 								<span>03. Phone:</span>
-								<a href="#">+90 (212) 6704545</a>, <a href="#">+90 (212) 6704546</a>
+								<a href="tel:+90 (212) 6704545">+90 (212) 6704545</a>, <a href="tel:+90 (212) 6704546">+90 (212) 6704546</a>
 							</li>
 						</ul>
 					</div>
@@ -76,9 +76,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="map-container">
+		<!--<div class="map-container">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d324186.9503090958!2d28.97875676021888!3d40.98342562532352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cacf669634c589%3A0xfae0d6ab43f4db36!2sSilka%20Kapak!5e0!3m2!1str!2str!4v1654879280948!5m2!1str!2str" width="100%" height="100%" style="border: 0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</div>
+		</div>-->
 		<div class="main_social">
 			<span class="main-social-title">Find On:</span>
 			<ul>

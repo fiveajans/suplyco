@@ -33,12 +33,12 @@
 				<!-- fixed-column-wrap_title -->
 				<div class="fixed-column-wrap_title first-tile_load">
 					<h2>
-						Last News
+						We Are Here
 						<br>
-						And Updates
+						For You
 					</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.
+						Some decisions in life leave scars. Join us if you want these tracks to be perfect.
 					</p>
 				</div>
 				<!-- fixed-column-wrap_title end -->

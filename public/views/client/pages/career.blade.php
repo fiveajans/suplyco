@@ -5,37 +5,7 @@
 
 @section('content')
 
-	<div class="content" data-pagetitle="Portfolio single">
-		<div class="page-scroll-nav psn_single">
-
-			<!-- content-nav_holder -->
-			<div class="content-nav_holder">
-				<div class="content-nav">
-					<ul>
-						<li>
-							<a href="portfolio-single2.html" class="ln ajax">
-								<i class="fal fa-long-arrow-left"></i>
-								<span>Prev <strong>- Project Title</strong></span>
-							</a>
-							<div class="content-nav-media">
-								<div class="bg" data-bg="{{ asset_url('client/images/folio/5.jpg') }}"></div>
-							</div>
-						</li>
-						<li>
-							<a href="portfolio-single3.html" class="rn ajax">
-								<span>Next <strong>- Project Title</strong></span>
-								<i class="fal fa-long-arrow-right"></i>
-							</a>
-							<div class="content-nav-media">
-								<div class="bg" data-bg="{{ asset_url('client/images/folio/8.jpg') }}"></div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<!-- content-nav_holder end -->
-
-		</div>
+	<div class="content" data-pagetitle="Career">
 
 		<!-- hero-section-dec -->
 		<div class="hero-section-dec color-bg">
@@ -71,12 +41,12 @@
 				<!-- fixed-column-wrap_title -->
 				<div class="fixed-column-wrap_title first-tile_load">
 					<h2>
-						Portfolio
+						We Are Here
 						<br>
-						Single
+						For You
 					</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.
+						Some decisions in life leave scars. Join us if you want these tracks to be perfect.
 					</p>
 				</div>
 				<!-- fixed-column-wrap_title end -->
@@ -102,27 +72,24 @@
 					<div class="container">
 						<div class="section-title">
 							<h3>
-								Kent Brant Concept
+								Join Us
 							</h3>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.
+								JOB OPPORTUNITIES OUR CAREER OPPORTUNITIES FOR YOU
 							</p>
 						</div>
 					</div>
 					<div class="clearfix"></div>
 					<div class="container">
 						<div class="fl-wrap">
-							<img src="{{ asset_url('client/images/folio/17.jpg') }}" alt="" style="width: 100%">
+							<img src="{{ asset_url('client/images/career.jpg') }}" alt="Career" style="width: 100%">
 						</div>
 						<div class="fl-wrap text-block">
 							<div class="pr-subtitle">
-								Project Info
+								Intern
 							</div>
 							<p>
-								Vestibulum orci felis, ullamcorper non condimentum non, ultrices ac nunc. Mauris non ligula suscipit, vulputate mi accumsan, dapibus felis. Nullam sed sapien dui. Nulla auctor sit amet sem non porta. Integer iaculis tellus nulla, quis imperdiet magna venenatis vitae. Ut nec hinc dolor possim. An eros argumentum vel, elit diceret duo eu, quo et aliquid ornatus delicatissimi.  Pri choro pertinax indoctum ne, ad partiendo persecuti forensibus est.
-							</p>
-							<p>
-								Cu nam tale ferri utroque, eu habemus albucius mel, cu vidit possit ornatus eum. Eu ius postulant salutatus definitionem, explicari. Graeci viderer qui ut, at habeo facer solet usu. Pri choro pertinax indoctum ne, ad partiendo persecuti forensibus est.
+								Working with us wants spirit, wants life, wants to lead the future, wants to work with all the power, wants to experience, wants to be friends, wants to be right, wants to be straight, does not want the environment, does not need friend at court, wants a good future. If you want to work with us, you should be like us. Must be with us. We must walk together, fall when we fall, feel sad when we are sad, happy when we are happy. if vision and mission are available to you, if you believe in your team, if your team and work come before everything, if you are be convenient, send and application to us!
 							</p>
 						</div>
 						<a href="{{ site_url('career/join-us') }}" class="btn color-bg fl-btn det-anim">

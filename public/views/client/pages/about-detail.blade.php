@@ -6,7 +6,7 @@
 @section('content')
 
 	<!-- content -->
-	<div class="content" data-pagetitle="about me">
+	<div class="content" data-pagetitle="About Us">
 
 		<!-- hero-section-dec -->
 		<div class="hero-section-dec color-bg">
@@ -35,7 +35,7 @@
 								<!-- ms_item -->
 								<div class="swiper-slide">
 									<div class="ms-item_fs fl-wrap">
-										<div class="bg par-elem" data-bg="{{ asset_url('client/images/bg/10.jpg') }}"></div>
+										<div class="bg par-elem" data-bg="{{ asset_url('client/images/bg/bg-02.jpg') }}"></div>
 									</div>
 								</div>
 								<!-- ms_item end -->
@@ -43,7 +43,7 @@
 								<!-- ms_item -->
 								<div class="swiper-slide ">
 									<div class="ms-item_fs fl-wrap">
-										<div class="bg par-elem" data-bg="{{ asset_url('client/images/bg/8.jpg') }}"></div>
+										<div class="bg par-elem" data-bg="{{ asset_url('client/images/bg/bg-01.jpg') }}"></div>
 									</div>
 								</div>
 								<!-- ms_item end -->
@@ -51,7 +51,7 @@
 								<!-- ms_item -->
 								<div class="swiper-slide">
 									<div class="ms-item_fs fl-wrap">
-										<div class="bg par-elem" data-bg="{{ asset_url('client/images/bg/13.jpg') }}"></div>
+										<div class="bg par-elem" data-bg="{{ asset_url('client/images/bg/8.jpg') }}"></div>
 									</div>
 								</div>
 								<!-- ms_item end -->
@@ -70,9 +70,9 @@
 				<!-- fixed-column-wrap_title -->
 				<div class="fixed-column-wrap_title first-tile_load">
 					<h2>
-						About My
+						About
 						<br>
-						Studio
+						Us
 					</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.
@@ -107,17 +107,17 @@
 					<div class="container">
 						<div class="section-title">
 							<h3>
-								Some Words About Me
+								Başlık
 							</h3>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.
+								Kısa başlık açıklaması.
 							</p>
 						</div>
 						<div class="row">
 							<div class="col-sm-5">
 								<div class="dec-img fl-wrap">
 									<img src="{{ asset_url('client/images/about.jpg') }}" class="respimg" alt="">
-									<a class="video_link image-popup" href="#">
+									<a href="https://www.youtube.com/watch?v=5_bNQf4o3XI" class="video_link image-popup">
 										<i class="fas fa-play"></i>
 										<span>Play Story video</span>
 									</a>
@@ -126,9 +126,8 @@
 							<div class="col-sm-7">
 								<div class="main-about fl-wrap">
 									<h2>
-										Innovative solutions to boost
-										<br>
-										<span>your creative</span> projects
+										Başlık
+										<!-- ./span -->
 									</h2>
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat fermentum.
@@ -136,59 +135,6 @@
 									<p>
 										Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa.
 									</p>
-									<div class="facts-container fl-wrap">
-
-										<!-- inline-facts -->
-										<div class="inline-facts-wrap">
-											<div class="inline-facts">
-												<div class="milestone-counter">
-													<div class="stats animaper">
-														<div class="num" data-content="0" data-num="145">
-															0
-														</div>
-													</div>
-												</div>
-												<h6>
-													Finished projects
-												</h6>
-											</div>
-										</div>
-										<!-- inline-facts end -->
-
-										<!-- inline-facts -->
-										<div class="inline-facts-wrap">
-											<div class="inline-facts">
-												<div class="milestone-counter">
-													<div class="stats animaper">
-														<div class="num" data-content="0" data-num="825">0</div>
-													</div>
-												</div>
-												<h6>
-													Working hours
-												</h6>
-											</div>
-										</div>
-										<!-- inline-facts end -->
-
-										<!-- inline-facts -->
-										<div class="inline-facts-wrap">
-											<div class="inline-facts">
-												<div class="milestone-counter">
-													<div class="stats animaper">
-														<div class="num" data-content="0" data-num="15">0</div>
-													</div>
-												</div>
-												<h6>
-													Awards won
-												</h6>
-											</div>
-										</div>
-										<!-- inline-facts end -->
-
-									</div>
-									<a href="portfolio.html" class="btn ajax color-bg fl-btn">
-										<span>My Portfolio</span>
-									</a>
 								</div>
 							</div>
 						</div>
@@ -208,10 +154,10 @@
 					<div class="container">
 						<div class="section-title">
 							<h3>
-								Services Provided
+								Başlık
 							</h3>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.
+								Kısa başlık açıklaması.
 							</p>
 						</div>
 
@@ -221,14 +167,14 @@
 								<div class="col-sm-6">
 									<div class="process-details">
 										<span class="pd-icon">
-											<i class="fal fa-desktop"></i>
+											<i class="fab fa-accusoft"></i>
 										</span>
 										<h4>
-											Web Design
+											Plywood
 										</h4>
 										<div class="clearfix"></div>
 										<p>
-											Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor.
+											It is indispensable for the sectors because it is a water-resistant and high-strength product used by many sectors.
 										</p>
 										<span class="process-numder">01.</span>
 										<div class="show-phdc">
@@ -242,17 +188,11 @@
 											<div class="proces-details-content-wrap">
 												<ul class="pdcw_list fl-wrap">
 													<li>
-														Concept
-													</li>
-													<li>
-														Design
-													</li>
-													<li>
-														3D Modeling
+														Plywood
 													</li>
 												</ul>
 												<p>
-													Cras mattis iudicium purus sit amet fermentum at nos hinc posthac, sitientis piros afros. Lorem ipsum dolor sit amet, consectetur adipisici elit, petierunt uti sibi concilium totius Galliae in diem sed eius mod tempor incidunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus piros labore et dolore magna.
+													Buraya içerik gelecek.
 												</p>
 											</div>
 										</div>
@@ -264,11 +204,11 @@
 											<i class="fab fa-pagelines"></i>
 										</span>
 										<h4>
-											Branding
+											Naturally
 										</h4>
 										<div class="clearfix"></div>
 										<p>
-											Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor.
+											We produce products of maximum quality by using all technology that can increase the level of sustainable life without harming nature.
 										</p>
 										<span class="process-numder">02.</span>
 										<div class="show-phdc">
@@ -282,16 +222,12 @@
 											<div class="proces-details-content-wrap">
 												<ul class="pdcw_list fl-wrap">
 													<li>
-														Concept
-													</li>
-													<li>
-														Design
-													</li>
-													<li>
-														3D Modeling
+														Naturally
 													</li>
 												</ul>
-												<p>Cras mattis iudicium purus sit amet fermentum at nos hinc posthac, sitientis piros afros. Lorem ipsum dolor sit amet, consectetur adipisici elit, petierunt uti sibi concilium totius Galliae in diem sed eius mod tempor incidunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus piros labore et dolore magna.</p>
+												<p>
+													Buraya içerik gelecek.
+												</p>
 											</div>
 										</div>
 									</div>
@@ -299,22 +235,26 @@
 								<div class=" col-sm-6">
 									<div class="process-details">
 										<span class="pd-icon">
-										<i class="fal fa-mobile-android"></i>
+											<i class="fas fa-lightbulb"></i>
 										</span>
-										<h4>UI/UX Design</h4>
+										<h4>
+											R&D
+										</h4>
 										<div class="clearfix"></div>
-										<p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor.</p>
+										<p>
+											The changing world and developing sectors cause new products to be demanded constantly. We offer the right products to the market.
+										</p>
 										<span class="process-numder">03.</span>
 										<div class="show-phdc"><i class="fal fa-plus"></i> <span>Details</span></div>
 										<div class="proces-details-content">
 											<div class="close-hidden_pdc"><i class="fal fa-times"></i></div>
 											<div class="proces-details-content-wrap">
 												<ul class="pdcw_list fl-wrap">
-													<li>Concept</li>
-													<li>Design</li>
-													<li>3D Modeling</li>
+													<li>R&D</li>
 												</ul>
-												<p>Cras mattis iudicium purus sit amet fermentum at nos hinc posthac, sitientis piros afros. Lorem ipsum dolor sit amet, consectetur adipisici elit, petierunt uti sibi concilium totius Galliae in diem sed eius mod tempor incidunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus piros labore et dolore magna.</p>
+												<p>
+													Buraya içerik gelecek.
+												</p>
 											</div>
 										</div>
 									</div>
@@ -322,22 +262,29 @@
 								<div class=" col-sm-6">
 									<div class="process-details">
 										<span class="pd-icon">
-										<i class="fal fa-camera-alt"></i>
+											<i class="fas fa-hands-helping"></i>
 										</span>
-										<h4>Photography</h4>
+										<h4>
+											Client
+										</h4>
 										<div class="clearfix"></div>
-										<p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor.</p>
+										<p>
+											We provide 24/7 professional service with our after-sales support team. In this way, we get fast results with instant returns.
+										</p>
 										<span class="process-numder">04.</span>
-										<div class="show-phdc"><i class="fal fa-plus"></i> <span>Details</span></div>
+										<div class="show-phdc">
+											<i class="fal fa-plus"></i>
+											<span>Details</span>
+										</div>
 										<div class="proces-details-content">
 											<div class="close-hidden_pdc"><i class="fal fa-times"></i></div>
 											<div class="proces-details-content-wrap">
 												<ul class="pdcw_list fl-wrap">
-													<li>Concept</li>
-													<li>Design</li>
-													<li>3D Modeling</li>
+													<li>Client</li>
 												</ul>
-												<p>Cras mattis iudicium purus sit amet fermentum at nos hinc posthac, sitientis piros afros. Lorem ipsum dolor sit amet, consectetur adipisici elit, petierunt uti sibi concilium totius Galliae in diem sed eius mod tempor incidunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus piros labore et dolore magna.</p>
+												<p>
+													Buraya içerik gelecek.
+												</p>
 											</div>
 										</div>
 									</div>
@@ -347,7 +294,7 @@
 						<!--process-wrap   end-->
 						<div class="srv-link-text fl-wrap">
 							<h4>Ready to order your project ? Visit my contacts page :  </h4>
-							<a href="contacts.html" class="btn ajax color-bg  fl-btn"><span>Contacts</span></a>
+							<a href="{{ site_url('contact') }}" class="btn ajax color-bg  fl-btn"><span>Contacts</span></a>
 						</div>
 					</div>
 					<div class="section-number"> <span>0</span>2. </div>

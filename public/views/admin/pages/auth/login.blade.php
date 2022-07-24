@@ -10,11 +10,11 @@
 		<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 			<div class="login-about">
 				<div class="slogan">
-					<span>Suplyco</span>
-					<span>Yönetim Paneli</span>
+					<span>Yönetim Paneli'ne</span>
+					<span>Hoşgeldiniz</span>
 				</div>
 				<div class="about-desc">
-					UniPro a data dashboard is an information management tool that visually tracks, analyzes and displays key performance indicators (KPI), metrics and key data points to monitor the health of a business, department or specific process.
+					Giriş problemi yaşıyorsanız sistem sağlayıcınız ile iletişime geçiniz.
 				</div>
 			</div>
 		</div>
@@ -24,7 +24,7 @@
 					<div class="login-screen">
 						<div class="login-body">
 							<a href="{{ site_url('admin/login') }}" class="login-logo">
-								<img src="{{ asset_url('admin/img/logo.svg') }}" alt="Five Ajans">
+								<img src="{{ asset_url('admin/img/logo-black.svg') }}" alt="Suplyco" style="width: 300px">
 							</a>
 							<h6>
 								Hoşgeldiniz,
@@ -44,9 +44,9 @@
 								</div>
 							</div>
 							<div class="actions">
-								<a href="#">
+								<!--<a href="#">
 									Şifreni mi unuttun?
-								</a>
+								</a>-->
 								<button type="submit" class="btn btn-primary">
 									Giriş Yap
 								</button>
@@ -59,14 +59,14 @@
 							@endisset
 
 						</div>
-						<div class="login-footer">
+						<!--<div class="login-footer">
 							<span class="additional-link">
 								Kullanıcı hesabın yok mu?
 								<a href="#" class="btn btn-light">
 									Talep Et
 								</a>
 							</span>
-						</div>
+						</div>-->
 					</div>
 				</form>
 			</div>

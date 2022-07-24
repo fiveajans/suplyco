@@ -27,6 +27,9 @@
 	<!-- Main css -->
 	<link rel="stylesheet" href="{{ asset_url('admin/css/main.css') }}">
 
+	<!-- Custom css -->
+	<link rel="stylesheet" href="{{ asset_url('admin/css/custom.css') }}">
+
 	<!-- *************
 		************ Vendor Css Files *************
 	************ -->
@@ -36,6 +39,10 @@
 	<!-- Search Filter JS -->
 	<link rel="stylesheet" href="{{ asset_url('admin/vendor/search-filter/search-filter.css') }}">
 	<link rel="stylesheet" href="{{ asset_url('admin/vendor/search-filter/custom-search-filter.css') }}">
+
+	<script>
+		const API_URL = '{{ site_url('api') }}';
+	</script>
 
 	@yield('styles')
 </head>
@@ -62,15 +69,15 @@
 					<a href="{{ site_url('admin/dashboard') }}" class="logo">
 						<img src="{{ asset_url('admin/img/logo.svg') }}" alt="Yönetim Paneli">
 					</a>
-					<a href="#tab-home" class="nav-link {{ segments(1) == 'dashboard' ? 'active' : null }}" id="home-tab" data-bs-toggle="tab" role="tab" aria-controls="tab-home" aria-selected="{{ segments(1) == 'dashboard' ? 'true' : 'false' }}">
+					<!--<a href="#tab-home" class="nav-link {{ segments(1) == 'dashboard' ? 'active' : null }}" id="home-tab" data-bs-toggle="tab" role="tab" aria-controls="tab-home" aria-selected="{{ segments(1) == 'dashboard' ? 'true' : 'false' }}">
 						<i class="icon-home2"></i>
 						<span class="nav-link-text">Anasayfa</span>
-					</a>
+					</a>-->
 					<a href="#tab-product" class="nav-link {{ segments(1) == 'products' ? 'active' : null }}" id="product-tab" data-bs-toggle="tab" role="tab" aria-controls="tab-product" aria-selected="{{ segments(1) == 'products' ? 'true' : 'false' }}">
 						<i class="icon-layers2"></i>
 						<span class="nav-link-text">Ürünler</span>
 					</a>
-					<a href="#tab-pages" class="nav-link" id="pages-tab" data-bs-toggle="tab" role="tab" aria-controls="tab-pages" aria-selected="false">
+					<!--<a href="#tab-pages" class="nav-link" id="pages-tab" data-bs-toggle="tab" role="tab" aria-controls="tab-pages" aria-selected="false">
 						<i class="icon-book-open"></i>
 						<span class="nav-link-text">Sayfalar</span>
 					</a>
@@ -93,7 +100,7 @@
 					<a href="#tab-settings" class="nav-link settings" id="settings-tab" data-bs-toggle="tab" role="tab" aria-controls="tab-authentication" aria-selected="false">
 						<i class="icon-settings1"></i>
 						<span class="nav-link-text">Ayarlar</span>
-					</a>
+					</a>-->
 				</div>
 				<!-- Tabs nav end -->
 
@@ -185,7 +192,7 @@
 										</a>
 									</li>
 								</ul>
-								<ul>
+								<!--<ul>
 									<li class="list-heading">
 										Suplyco
 									</li>
@@ -194,18 +201,18 @@
 											Daygrid View
 										</a>
 									</li>
-								</ul>
+								</ul>-->
 							</div>
 						</div>
 						<!-- Sidebar menu ends -->
 
 						<!-- Sidebar actions starts -->
-						<div class="sidebar-actions">
+						<!--<div class="sidebar-actions">
 							<div class="support-tile">
 								<i class="icon-headphones"></i>
 								7/24 Destek
 							</div>
-						</div>
+						</div>-->
 						<!-- Sidebar actions ends -->
 
 					</div>
@@ -602,7 +609,7 @@
 							<!-- Toggle sidebar end -->
 
 							<!-- Mega Menu Start -->
-							<div class="cd-dropdown-wrapper">
+							<!--<div class="cd-dropdown-wrapper">
 								<a class="cd-dropdown-trigger" href="#0">
 									<i class="icon-menu menu-icon"></i>
 									<span class="menu-text">Menü</span>
@@ -942,17 +949,17 @@
 									</ul>
 
 								</nav>
-							</div>
+							</div>-->
 							<!-- Mega Menu End -->
 
 							<!-- Search input group start -->
-							<div class="ui fluid category search">
+							<!--<div class="ui fluid category search">
 								<div class="ui icon input">
 									<input type="text" name="search" placeholder="Ara" class="prompt">
 									<i class="search icon icon-search1"></i>
 								</div>
 								<div class="results"></div>
-							</div>
+							</div>-->
 							<!-- Search input group end -->
 
 						</div>
@@ -962,7 +969,7 @@
 
 						<!-- Header actions start -->
 						<ul class="header-actions">
-							<li class="dropdown">
+							<!--<li class="dropdown">
 								<a href="#" id="taskss" data-toggle="dropdown" aria-haspopup="true">
 									<i class="icon-check-square"></i>
 								</a>
@@ -1097,24 +1104,24 @@
 										</ul>
 									</div>
 								</div>
-							</li>
+							</li>-->
 							<li class="dropdown">
 								<a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
 									<span class="avatar">
 										<img src="{{ asset_url('admin/img/user.svg') }}" alt="User Avatar">
-										<span class="status busy"></span>
+										<!--<span class="status busy"></span>-->
 									</span>
 								</a>
 								<div class="dropdown-menu dropdown-menu-end md" aria-labelledby="userSettings">
 									<div class="header-profile-actions">
-										<a href="#">
+										<!--<a href="#">
 											<i class="icon-user1"></i>
 											Hesabım
 										</a>
 										<a href="#">
 											<i class="icon-settings1"></i>
 											Ayarlar
-										</a>
+										</a>-->
 										<a href="{{ site_url('admin/logout') }}">
 											<i class="icon-log-out1"></i>
 											Çıkış Yap
@@ -1183,6 +1190,9 @@
 	<!-- Search Filter JS -->
 	<script src="{{ asset_url('admin/vendor/search-filter/search-filter.js') }}"></script>
 	<script src="{{ asset_url('admin/vendor/search-filter/custom-search-filter.js') }}"></script>
+
+	<!-- SweetAlert2 -->
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 	@yield('scripts')
 

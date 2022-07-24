@@ -24,6 +24,9 @@
 	<!-- Main css -->
 	<link rel="stylesheet" href="{{ asset_url('admin/css/main.css') }}">
 
+	<!-- Custom css -->
+	<link rel="stylesheet" href="{{ asset_url('admin/css/custom.css') }}">
+
 	@yield('styles')
 </head>
 <body class="authentication">

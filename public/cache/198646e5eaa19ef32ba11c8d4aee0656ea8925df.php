@@ -79,20 +79,20 @@
 			<div class="header-contacts">
 				<ul>
 					<li>
-						<span>01. Call</span>
-						<a href="tel:+90 (212) 6704545">
-							+90 (212) 6704545
+						<span>Call</span>
+						<a href="tel:+90 (212) 8807777">
+							+90 (212) 8807777
 						</a>
 					</li>
 					<li>
-						<span>02. Write</span>
+						<span>Write</span>
 						<a href="mailto:info@suplyco.com">
 							info@suplyco.com
 						</a>
 					</li>
 				</ul>
 				<a href="contacts.html" class="ajax contacts-btn">
-					Get in touch
+					Get in Touch
 				</a>
 			</div>
 			<!-- header-contacts end -->
@@ -106,23 +106,23 @@
 			<div class="left-header_social">
 				<ul>
 					<li>
-						<a href="#">
-							<img src="<?php echo e(asset_url('client/fonts/tr.svg')); ?>" alt="" width="20" height="20">
+						<a href="https://tr.suplyco.com">
+							<img src="<?php echo e(asset_url('client/fonts/tr.svg')); ?>" alt="Turkish" width="20" height="20">
+						</a>
+					</li>
+					<!--<li>
+						<a href="https://de.suplyco.com">
+							<img src="<?php echo e(asset_url('client/fonts/de.svg')); ?>" alt="German" width="20" height="20">
 						</a>
 					</li>
 					<li>
-						<a href="#">
-							<img src="<?php echo e(asset_url('client/fonts/de.svg')); ?>" alt="" width="20" height="20">
+						<a href="https://es.suplyco.com">
+							<img src="<?php echo e(asset_url('client/fonts/es.svg')); ?>" alt="Spanish" width="20" height="20">
 						</a>
-					</li>
+					</li>-->
 					<li>
-						<a href="#">
-							<img src="<?php echo e(asset_url('client/fonts/es.svg')); ?>" alt="" width="20" height="20">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="<?php echo e(asset_url('client/fonts/cn.svg')); ?>" alt="" width="20" height="20">
+						<a href="https://kr.suplyco.com">
+							<img src="<?php echo e(asset_url('client/fonts/kr.svg')); ?>" alt="Korean" width="20" height="20">
 						</a>
 					</li>
 				</ul>
@@ -133,7 +133,9 @@
 		<!-- share button -->
 		<div class="share-btn showshare color-bg">
 		<span>
-			Share
+			Follow
+			<br>
+			Us
 			<i class="fal fa-plus"></i></span>
 		</div>
 		<!-- share button end -->
