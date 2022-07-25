@@ -37,8 +37,8 @@ class Bootstrap
 		$this->router = new Router([
 			'base_folder' => 'projects/suplyco',
 			'paths' => [
-				'controllers' => 'app/controllers',
-				'middlewares' => 'app/middlewares'
+				'controllers' => 'app/Controllers',
+				'middlewares' => 'app/Middlewares'
 			],
 			'namespaces' => [
 				'controllers' => 'App\Controllers',
